@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import BackG from '../assets/business-writing2.jpeg';
 
 const Hero = () => {
@@ -23,8 +24,13 @@ const Hero = () => {
             affordable, secure and fast service.
           </p>
           <div className="flex flex-col md:flex-row md:gap-6 md:justify-center md:items-center space-y-4">
-            <button className="btn btn-primary">View Pricing</button>
-            <button className="btn btn-neutral">Get a free sample</button>
+            <Link to="/pricing" className="btn btn-primary">
+              View Pricing
+            </Link>
+
+            <Link to="/contact" className="btn btn-neutral">
+              Get a free sample
+            </Link>
           </div>
         </div>
       </div>

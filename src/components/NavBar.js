@@ -5,10 +5,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const NavBar = () => {
   const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Blog', href: '#' },
+    { name: 'About', href: '#' },
+    { name: 'Testimonials', href: '/contact' },
+    { name: 'Contact Us', href: '/contact' },
   ];
   return (
     <div>
@@ -20,7 +20,7 @@ const NavBar = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="linkplaceholder">
+                <a href="/">
                   <span className="sr-only">Workflow</span>
                   <img
                     alt="Workflow"
@@ -28,8 +28,11 @@ const NavBar = () => {
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                   />
                 </a>
+                <p className=" text-blue-700 font-semibold text-xl font-peralta">
+                  Blue Peak Editors
+                </p>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-blue-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open main menu</span>
                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -46,10 +49,7 @@ const NavBar = () => {
                   {item.name}
                 </a>
               ))}
-              <a
-                href="linkplaceholder"
-                className="font-medium btn btn-primary "
-              >
+              <a href="/contact" className="font-medium btn btn-primary ">
                 Order Now
               </a>
             </div>
@@ -68,7 +68,7 @@ const NavBar = () => {
         >
           <Popover.Panel
             focus
-            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            className="absolute z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
@@ -98,7 +98,7 @@ const NavBar = () => {
                 ))}
               </div>
               <a
-                href="linkplaceholder"
+                href="contact"
                 className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
               >
                 Order Now
