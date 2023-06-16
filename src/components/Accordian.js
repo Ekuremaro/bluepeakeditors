@@ -3,7 +3,7 @@ import { Accordion } from 'flowbite-react';
 
 const Accordian = () => {
   return (
-    <div>
+    <div className="m-4 text-left max-w-screen-xl xl:mx-auto lg:px-4">
       <Accordion alwaysOpen={true}>
         <Accordion.Panel>
           <Accordion.Title>What kind of services do you offer?</Accordion.Title>

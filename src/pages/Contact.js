@@ -1,15 +1,13 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import Form from '../components/Form';
-import { Link } from 'react-router-dom';
+import Contact2 from '../components/Contact';
 
 const Contact = () => {
   return (
     <div>
       <NavBar />
-      <Form />
-
+      <Contact2 />
       <Footer />
     </div>
   );

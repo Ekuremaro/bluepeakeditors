@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricingComponent = () => {
   return (
-    <div>
+    <div className='m-4 max-w-screen-xl xl:mx-auto lg:px-4'>
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>

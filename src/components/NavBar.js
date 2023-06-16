@@ -5,8 +5,8 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const NavBar = () => {
   const navigation = [
-    { name: 'Blog', href: '#' },
-    { name: 'About', href: '#' },
+     //{ name: 'Blog', href: '#' },
+    { name: 'About', href: '/contact' },
     { name: 'Testimonials', href: '/contact' },
     { name: 'Contact Us', href: '/contact' },
   ];
@@ -20,7 +20,7 @@ const NavBar = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="/">
+                <a href="/" className='md:mr-5'>
                   <span className="sr-only">Workflow</span>
                   <img
                     alt="Workflow"
@@ -39,7 +39,7 @@ const NavBar = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <div className="hidden md:block md:ml-10 md:pr-0 md:space-x-4 lg:space-x-8">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -49,7 +49,7 @@ const NavBar = () => {
                   {item.name}
                 </a>
               ))}
-              <a href="/contact" className="font-medium btn btn-primary ">
+              <a href="/pricing" className="font-medium btn btn-primary ">
                 Order Now
               </a>
             </div>
@@ -98,7 +98,7 @@ const NavBar = () => {
                 ))}
               </div>
               <a
-                href="contact"
+                href="/pricing"
                 className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
               >
                 Order Now

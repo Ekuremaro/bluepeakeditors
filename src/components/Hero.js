@@ -4,26 +4,26 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className=" bg-black relative">
+    <div className="relative bg-black ">
       <div
         className="h-[90vh] relative opacity-50 "
         style={{
           backgroundImage:
-            "url('https://ewritinghelp.com/storage/posts/October2018/b3WWHgpsBb3bdg2YJBT3.jpg')",
+            "url(/assets/business-writing2.jpeg)",
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
       ></div>
-      <div className="hero-content text-center text-neutral-content opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute text-center -translate-x-1/2 -translate-y-1/2 opacity-100 hero-content text-neutral-content top-1/2 left-1/2">
         <div className=" md:max-w-3xl">
-          <h1 className="mb-5 text-5xl  md:text-7xl font-bold">
+          <h1 className="mb-5 text-5xl font-bold md:text-7xl">
             Professional Editing and Proofreading
           </h1>
           <p className="mb-5 text-xl md:text-2xl">
             We ensure your documents are perfectly edited and proofread with our
             affordable, secure and fast service.
           </p>
-          <div className="flex flex-col md:flex-row md:gap-6 md:justify-center md:items-center space-y-4">
+          <div className="flex flex-col space-y-4 md:flex-row md:gap-6 md:justify-center md:items-center md:space-y-0">
             <Link to="/pricing" className="btn btn-primary">
               View Pricing
             </Link>
