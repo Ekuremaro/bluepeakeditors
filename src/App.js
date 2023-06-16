@@ -2,6 +2,7 @@ import './App.css';
 import Index from './pages/Index';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
+import Error from './pages/Error';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: '/contact',
     element: <Contact />,
   },
+  {
+    path: '*',
+    element: <Error />,
+  }
 ]);
 
 function App() {

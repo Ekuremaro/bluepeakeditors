@@ -2,6 +2,7 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const navigation = [
@@ -49,9 +50,9 @@ const NavBar = () => {
                   {item.name}
                 </a>
               ))}
-              <a href="/pricing" className="font-medium btn btn-primary ">
+              <Link to="/pricing" className="font-medium btn btn-primary ">
                 Order Now
-              </a>
+              </Link>
             </div>
           </nav>
         </div>
@@ -97,12 +98,11 @@ const NavBar = () => {
                   </a>
                 ))}
               </div>
-              <a
-                href="/pricing"
+              <Link to="/pricing"
                 className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
               >
                 Order Now
-              </a>
+              </Link>
             </div>
           </Popover.Panel>
         </Transition>
